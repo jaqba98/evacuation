@@ -1,8 +1,8 @@
 {
     "simulationName": "D:/projects/evacuation/Assets\\simulations\\psk.json",
-    "cursorPositionX": -4.0,
-    "cursorPositionZ": -20.0,
-    "cursorRotation": 270.0,
+    "cursorPositionX": 0.0,
+    "cursorPositionZ": -8.0,
+    "cursorRotation": 180.0,
     "segments": [
         {
             "segmentName": "Segment_Floor_Prefab",
@@ -31,14 +31,6 @@
         {
             "segmentName": "Segment_Floor_Prefab",
             "segmentPositionX": -12.0,
-            "segmentPositionZ": 4.0,
-            "segmentRotation": 0.0,
-            "isVisible": true,
-            "segmentId": 0
-        },
-        {
-            "segmentName": "Segment_Floor_Prefab",
-            "segmentPositionX": -12.0,
             "segmentPositionZ": 8.0,
             "segmentRotation": 0.0,
             "isVisible": true,
@@ -152,14 +144,6 @@
             "segmentName": "Segment_Floor_Prefab",
             "segmentPositionX": -16.0,
             "segmentPositionZ": -8.0,
-            "segmentRotation": 0.0,
-            "isVisible": true,
-            "segmentId": 0
-        },
-        {
-            "segmentName": "Segment_Floor_Prefab",
-            "segmentPositionX": -12.0,
-            "segmentPositionZ": -4.0,
             "segmentRotation": 0.0,
             "isVisible": true,
             "segmentId": 0
@@ -192,14 +176,6 @@
             "segmentName": "Segment_Floor_Prefab",
             "segmentPositionX": 4.0,
             "segmentPositionZ": 8.0,
-            "segmentRotation": 0.0,
-            "isVisible": true,
-            "segmentId": 0
-        },
-        {
-            "segmentName": "Segment_Floor_Prefab",
-            "segmentPositionX": 4.0,
-            "segmentPositionZ": 12.0,
             "segmentRotation": 0.0,
             "isVisible": true,
             "segmentId": 0
@@ -371,6 +347,30 @@
             "segmentRotation": 270.0,
             "isVisible": true,
             "segmentId": 5
+        },
+        {
+            "segmentName": "Segment_Door_Open_Prefab",
+            "segmentPositionX": -12.0,
+            "segmentPositionZ": -4.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 3
+        },
+        {
+            "segmentName": "Segment_Door_Open_Prefab",
+            "segmentPositionX": -12.0,
+            "segmentPositionZ": 4.0,
+            "segmentRotation": 180.0,
+            "isVisible": true,
+            "segmentId": 3
+        },
+        {
+            "segmentName": "Segment_Door_Open_Prefab",
+            "segmentPositionX": 4.0,
+            "segmentPositionZ": 12.0,
+            "segmentRotation": 180.0,
+            "isVisible": true,
+            "segmentId": 3
         }
     ]
 }

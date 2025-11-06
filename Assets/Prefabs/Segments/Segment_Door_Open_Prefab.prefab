@@ -136,21 +136,61 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6192846807945410667}
     m_Modifications:
+    - target: {fileID: 332030653201157090, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4058923311639316164, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4582152800506599600, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4943006626627751788, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943006626627751788, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943006626627751788, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
+      propertyPath: m_TagString
+      value: DoorOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788824672482823593, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424135963382063022, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7167232519313568320, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
       propertyPath: m_Name
       value: Wall_Door_Prefab
       objectReference: {fileID: 0}
     - target: {fileID: 7167232519313568320, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7167232519313568320, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351729533177609715, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351729533177609715, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351729533177609715, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
+      propertyPath: m_TagString
+      value: DoorOpen
       objectReference: {fileID: 0}
     - target: {fileID: 7777209817941384666, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
       propertyPath: m_Enabled
@@ -159,6 +199,10 @@ PrefabInstance:
     - target: {fileID: 8169344755934537891, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404191312779244962, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9042721166060958472, guid: 85cdecc143e7f4346a410b55fdc75a71, type: 3}
       propertyPath: m_LocalPosition.x

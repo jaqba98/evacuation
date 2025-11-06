@@ -9,11 +9,12 @@ TagManager:
   - Agent
   - StartSimulation
   - Spawn
+  - DoorOpen
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Door
   - Water
   - UI
   - Scene
