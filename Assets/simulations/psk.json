@@ -1,0 +1,376 @@
+{
+    "simulationName": "D:/projects/evacuation/Assets\\simulations\\psk.json",
+    "cursorPositionX": -4.0,
+    "cursorPositionZ": -20.0,
+    "cursorRotation": 270.0,
+    "segments": [
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": -4.0,
+            "segmentPositionZ": 0.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": -8.0,
+            "segmentPositionZ": 0.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": -12.0,
+            "segmentPositionZ": 0.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": -12.0,
+            "segmentPositionZ": 4.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": -12.0,
+            "segmentPositionZ": 8.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": -8.0,
+            "segmentPositionZ": 8.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": -8.0,
+            "segmentPositionZ": 12.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": -12.0,
+            "segmentPositionZ": 12.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": -16.0,
+            "segmentPositionZ": 12.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": -16.0,
+            "segmentPositionZ": 8.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Spawn_Prefab",
+            "segmentPositionX": -8.0,
+            "segmentPositionZ": 16.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 6
+        },
+        {
+            "segmentName": "Segment_Spawn_Prefab",
+            "segmentPositionX": -12.0,
+            "segmentPositionZ": 16.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 6
+        },
+        {
+            "segmentName": "Segment_Spawn_Prefab",
+            "segmentPositionX": -16.0,
+            "segmentPositionZ": 16.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 6
+        },
+        {
+            "segmentName": "Segment_Spawn_Prefab",
+            "segmentPositionX": -16.0,
+            "segmentPositionZ": -12.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 6
+        },
+        {
+            "segmentName": "Segment_Spawn_Prefab",
+            "segmentPositionX": -12.0,
+            "segmentPositionZ": -12.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 6
+        },
+        {
+            "segmentName": "Segment_Spawn_Prefab",
+            "segmentPositionX": -8.0,
+            "segmentPositionZ": -12.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 6
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": -8.0,
+            "segmentPositionZ": -8.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": -12.0,
+            "segmentPositionZ": -8.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": -16.0,
+            "segmentPositionZ": -8.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": -12.0,
+            "segmentPositionZ": -4.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 0.0,
+            "segmentPositionZ": 0.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 0.0,
+            "segmentPositionZ": 4.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 0.0,
+            "segmentPositionZ": 8.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 4.0,
+            "segmentPositionZ": 8.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 4.0,
+            "segmentPositionZ": 12.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 4.0,
+            "segmentPositionZ": 16.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 0.0,
+            "segmentPositionZ": 16.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 8.0,
+            "segmentPositionZ": 16.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Spawn_Prefab",
+            "segmentPositionX": 8.0,
+            "segmentPositionZ": 20.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 6
+        },
+        {
+            "segmentName": "Segment_Spawn_Prefab",
+            "segmentPositionX": 4.0,
+            "segmentPositionZ": 20.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 6
+        },
+        {
+            "segmentName": "Segment_Spawn_Prefab",
+            "segmentPositionX": 0.0,
+            "segmentPositionZ": 20.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 6
+        },
+        {
+            "segmentName": "Segment_Spawn_Prefab",
+            "segmentPositionX": 0.0,
+            "segmentPositionZ": 24.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 6
+        },
+        {
+            "segmentName": "Segment_Spawn_Prefab",
+            "segmentPositionX": 4.0,
+            "segmentPositionZ": 24.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 6
+        },
+        {
+            "segmentName": "Segment_Spawn_Prefab",
+            "segmentPositionX": 8.0,
+            "segmentPositionZ": 24.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 6
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 8.0,
+            "segmentPositionZ": 8.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 8.0,
+            "segmentPositionZ": 4.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 8.0,
+            "segmentPositionZ": 0.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 8.0,
+            "segmentPositionZ": -4.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 8.0,
+            "segmentPositionZ": -8.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 4.0,
+            "segmentPositionZ": -12.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 8.0,
+            "segmentPositionZ": -12.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 0.0,
+            "segmentPositionZ": -12.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 0.0,
+            "segmentPositionZ": -16.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Floor_Prefab",
+            "segmentPositionX": 0.0,
+            "segmentPositionZ": -20.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 0
+        },
+        {
+            "segmentName": "Segment_Spawn_Prefab",
+            "segmentPositionX": 0.0,
+            "segmentPositionZ": -8.0,
+            "segmentRotation": 0.0,
+            "isVisible": true,
+            "segmentId": 6
+        },
+        {
+            "segmentName": "Segment_Door_Exit_Prefab",
+            "segmentPositionX": -4.0,
+            "segmentPositionZ": -20.0,
+            "segmentRotation": 270.0,
+            "isVisible": true,
+            "segmentId": 5
+        }
+    ]
+}
