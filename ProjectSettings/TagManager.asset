@@ -10,6 +10,7 @@ TagManager:
   - StartSimulation
   - Spawn
   - DoorOpen
+  - Block
   layers:
   - Default
   - TransparentFX
