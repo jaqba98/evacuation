@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2955237806195524791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2507760080006734801}
+  - component: {fileID: 4606906690908671244}
+  m_Layer: 0
+  m_Name: SegmentManagerPrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2507760080006734801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955237806195524791}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4606906690908671244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955237806195524791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba626fa54c2e7734586690ec1ea1ad9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SegmentManager
+  floor:
+  - {fileID: 5264638233555003517, guid: 55fdd49cd7e89c147aa4df0797ba6483, type: 3}
+  wall:
+  - {fileID: 1910700651852511044, guid: e53fc285d22d3334a97762fe8b99d45f, type: 3}
+  corner:
+  - {fileID: 8983963198676249535, guid: 7eda0e95d9bdd25438ecefb051b8befe, type: 3}
+  doorOpen:
+  - {fileID: 3742242521593154646, guid: 09464350996af6645aee6887e0e28ef2, type: 3}
+  doorBlock:
+  - {fileID: 5292833334302397403, guid: 4148ec1d5a391b84aa6b2da8222d40d5, type: 3}
+  doorExit:
+  - {fileID: 1382518934295813844, guid: a83cc77c0ec265846a0949e19d362c63, type: 3}
+  spawn:
+  - {fileID: 4479061437619731265, guid: 2c51ea51fc46a3347a8bbab013b326fc, type: 3}

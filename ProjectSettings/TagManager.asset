@@ -4,13 +4,13 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Scene
-  - Exit
-  - Agent
-  - StartSimulation
-  - Spawn
-  - DoorOpen
+  - Segment_Common
+  - GameObject
+  - EmptyObject
   - Block
+  - Exit
+  - Segment_Block
+  - Spawn
   layers:
   - Default
   - TransparentFX
