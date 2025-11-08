@@ -19,7 +19,6 @@ public class Finder : MonoBehaviour {
         return children;
     }
 
-    // I am here
     public GameObject FindChildByName(Transform parent, string name) {
         GameObject childByName = null;
         foreach (Transform child in parent) {

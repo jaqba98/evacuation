@@ -41,6 +41,7 @@ public class StartSimulationMenu : MonoBehaviour {
     private void Reload() {
         timer.Reload();
         status.Reload();
+        spawnAgents.Reload();
     }
     
     private void OnExit() {
@@ -52,69 +53,15 @@ public class StartSimulationMenu : MonoBehaviour {
         SceneManager.LoadScene("SummarySimulation");
     }
 
-    // public Segments segments;
-    // public BakeTerrain bakeTerrain;
-
-    // public List<GameObject> agents = new List<GameObject>();
-    // private int currentIndex = 0;
-
-    // public void Start() {
-    //     segments.Reload();
-    //     bakeTerrain.Reload();
-    //     InitAgents();
-    //     people = agents.Count;
-    // }
-
-    // [Header("Timer Settings")]
-    // public float startTime = 60f;
-
-    // [Header("UI")]
-
-    // private float currentTime;
-    // private bool isRunning = false;
-
-    // public void Update() {
-    //     if (agents[currentIndex]) {
-    //         float x = agents[currentIndex].transform.position.x;
-    //         float y = agents[currentIndex].transform.position.y + 10.0f;
-    //         float z = agents[currentIndex].transform.position.z - 5.0f;
-    //         Camera.main.transform.localPosition = new Vector3(x, y, z);
-    //         Camera.main.transform.LookAt(agents[currentIndex].transform);
-    //     }
-    // }
-
-    //     survivors++;
-    //     Destroy(agent);
-    //     currentIndex = 0;
-    //     InitAgents();
-    //     if (agents.Count == 0) {
-    //         SceneManager.LoadScene("SummarySimulation");
-    //     }
-
-    // public void Next() {
-    //     if (agents.Count == 0) {
-    //         return;
-    //     }
-    //     currentIndex++;
-    //     if (currentIndex >= agents.Count) {
-    //         currentIndex = 0;
-    //     }
-    // }
-
-    // public void Back() {
-    //     if (agents.Count == 0) {
-    //         return;
-    //     }
-    //     currentIndex--;
-    //     if (currentIndex < 0) {
-    //         currentIndex = agents.Count - 1;
-    //     }
-    // }
-
-    // private void InitAgents() {
-    //     GameObject[] foundAgents = GameObject.FindGameObjectsWithTag("Agent");
-    //     agents = new List<GameObject>(foundAgents);
-    // }
+    public void Update() {
+        if (simulationStore.currentAgent < simulationStore.agents.Count && simulationStore.agents[simulationStore.currentAgent]) {
+            float x = simulationStore.agents[simulationStore.currentAgent].transform.position.x;
+            float y = simulationStore.agents[simulationStore.currentAgent].transform.position.y + 10.0f;
+            float z = simulationStore.agents[simulationStore.currentAgent].transform.position.z - 5.0f;
+            Camera.main.transform.localPosition = new Vector3(x, y, z);
+            Camera.main.transform.LookAt(simulationStore.agents[simulationStore.currentAgent].transform);
+        }
+    }
 
     public void Exit() {
         SceneManager.LoadScene("MainMenu");

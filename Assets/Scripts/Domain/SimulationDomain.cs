@@ -7,5 +7,6 @@ public class SimulationDomain {
     public float cursorPositionX;
     public float cursorPositionZ;
     public float cursorRotation;
+    public int cameraSize;
     public List<SegmentDomain> segments;
 }

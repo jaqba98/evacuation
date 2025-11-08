@@ -27,6 +27,7 @@ public class LoadSimulation : MonoBehaviour {
         newSimulationDomain.cursorPositionX = 0;
         newSimulationDomain.cursorPositionZ = 0;
         newSimulationDomain.cursorRotation = 0;
+        newSimulationDomain.cameraSize = 10;
         newSimulationDomain.segments = new List<SegmentDomain>();
         string json = JsonUtility.ToJson(newSimulationDomain);
         PlayerPrefs.SetString("simulationData", json);

@@ -12,9 +12,15 @@ public class EditSimulationMenu : MonoBehaviour {
     public Rotate rotate;
     public Segments segments;
     public PositionPanel positionPanel;
+    public CameraController cameraController;
 
     public void Start() {
+        Init();
         Reload();
+    }
+    
+    public void Init() {
+        segments.Init();
     }
 
     public void Reload() {
@@ -24,6 +30,7 @@ public class EditSimulationMenu : MonoBehaviour {
         chooser.Reload();
         rotate.Reload();
         positionPanel.Reload();
+        cameraController.Reload();
     }
 
     public void Save() {
@@ -32,6 +39,7 @@ public class EditSimulationMenu : MonoBehaviour {
             cursorPositionX = simulationStore.cursorPositionX,
             cursorPositionZ = simulationStore.cursorPositionZ,
             cursorRotation = simulationStore.cursorRotation,
+            cameraSize = simulationStore.cameraSize,
             segments = simulationStore.segmentsDomain
         };
         string json = JsonUtility.ToJson(newSimulationDomain, true);
@@ -50,5 +58,29 @@ public class EditSimulationMenu : MonoBehaviour {
 
     public void Exit() {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Plus() {
+        if (simulationStore.cameraSize > 10) {
+            simulationStore.cameraSize -= 5;
+            Reload();
+        }
+    }
+
+    public void Minus() {
+        if (simulationStore.cameraSize < 100) {
+            simulationStore.cameraSize += 5;
+            Reload();
+        }
+    }
+
+    public void MoveLeft() {
+        simulationStore.segmentsDomain.ForEach(segmentDomain => segmentDomain.segmentPositionX -= 4);
+        segments.Init();
+    }
+
+    public void MoveRight() {
+        simulationStore.segmentsDomain.ForEach(segmentDomain => segmentDomain.segmentPositionX += 4);
+        segments.Init();
     }
 }

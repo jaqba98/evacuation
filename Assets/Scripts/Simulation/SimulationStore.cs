@@ -22,16 +22,18 @@ public class SimulationStore : MonoBehaviour {
     public int people;
     public int survivors;
     public float panic;
+    public int cameraSize;
+    public int currentAgent = 0;
+    public List<GameObject> agents;
 
     public void Awake() {
+        Debug.Log(PlayerPrefs.GetString("simulationData"));
         simulationName = PlayerPrefs.GetString("simulationName");
         simulationType = PlayerPrefs.GetString("simulationType");
-
         string timerString = PlayerPrefs.GetString("simulationTimer", "");
         if (!int.TryParse(timerString, out simulationTimer)) {
             simulationTimer = 30;
         }
-
         simulationDomain = JsonUtility.FromJson<SimulationDomain>(PlayerPrefs.GetString("simulationData"));
         canBuildSegment = true;
         segmentSize = 4.0f;
@@ -48,5 +50,6 @@ public class SimulationStore : MonoBehaviour {
         } else {
             panic = 0.5f;
         }
+        cameraSize = simulationDomain.cameraSize;
     }
 }
