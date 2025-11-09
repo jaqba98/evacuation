@@ -6,32 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu/MainMenu.unity
+    path: Assets/Game/MainMenu/Scene/MainMenu.unity
     guid: 72ae3e2a39b087840b0626d4a6295e5f
   - enabled: 1
-    path: Assets/Scenes/Menu/CreateMenu.unity
-    guid: a9957a07859585145b2a4438b118a188
-  - enabled: 1
-    path: Assets/Scenes/Menu/LoadMenu.unity
-    guid: 0a7e1d8acadc70e4fbfac670f3259bad
-  - enabled: 1
-    path: Assets/Scenes/Menu/ControlMenu.unity
-    guid: 0e975c448671d364b84ab4c031e10e4f
-  - enabled: 1
-    path: Assets/Scenes/Menu/AuthorMenu.unity
+    path: Assets/Game/AuthorMenu/Scene/AuthorMenu.unity
     guid: 5055c57c4525283448dcb17e41d21c89
   - enabled: 1
-    path: Assets/Scenes/Simulation/LoadSimulation.unity
-    guid: b8d1093b263157844bebb78e689715f9
+    path: Assets/Game/ControlMenu/Scene/ControlMenu.unity
+    guid: 0e975c448671d364b84ab4c031e10e4f
   - enabled: 1
-    path: Assets/Scenes/Simulation/EditSimulation.unity
-    guid: 131a5ee3e1156af48a95fbba12f35bcf
-  - enabled: 1
-    path: Assets/Scenes/Simulation/StartSimulation.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-    path: Assets/Scenes/Simulation/SummarySimulation.unity
-    guid: 2eadc76ee2bd7df44a2e1d649fca860f
+    path: Assets/Game/CreateMenu/Scene/CreateMenu.unity
+    guid: a9957a07859585145b2a4438b118a188
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

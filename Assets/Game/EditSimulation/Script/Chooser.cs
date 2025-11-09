@@ -1,0 +1,45 @@
+using UnityEngine;
+
+public class Chooser : MonoBehaviour {
+    public SimulationStore simulationStore;
+    public EditSimulation editSimulation;
+    public Listener listener;
+
+    public void Init() {
+        simulationStore.currentSegmentIndex = 0;
+    }
+
+    public void Reload() {
+        for (int i = transform.childCount - 1; i >= 0; i--) {
+            Destroy(transform.GetChild(i).gameObject);
+        }
+        simulationStore.currentSegment = simulationStore.segments[simulationStore.currentSegmentIndex];
+        GameObject currentSegment = simulationStore.currentSegment;
+        GameObject newSegment = Instantiate(currentSegment, transform);
+        newSegment.transform.SetParent(transform);
+        newSegment.transform.localPosition = Vector3.zero;
+        newSegment.transform.localRotation = Quaternion.identity;
+        newSegment.transform.localScale = Vector3.one;
+    }
+
+    private void OnEnable() {
+        listener.AddAction("i", () => ChangeSegment(-1));
+        listener.AddAction("p", () => ChangeSegment(1));
+    }
+
+    private void OnDisable() {
+        listener.RemoveAction("i");
+        listener.RemoveAction("p");
+    }
+
+    private void ChangeSegment(int direction) {
+        simulationStore.currentSegmentIndex += direction;
+        if (simulationStore.currentSegmentIndex >= simulationStore.segments.Count) {
+            simulationStore.currentSegmentIndex = 0;
+        }
+        if (simulationStore.currentSegmentIndex < 0) {
+            simulationStore.currentSegmentIndex = simulationStore.segments.Count - 1;
+        }
+        editSimulation.Reload();
+    }
+}
