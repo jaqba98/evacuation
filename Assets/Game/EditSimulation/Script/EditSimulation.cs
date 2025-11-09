@@ -65,28 +65,6 @@ public class EditSimulation : MonoBehaviour {
 //         positionPanel.Reload();
 //         cameraController.Reload();
 //     }
-//     public void Save() {
-//         SimulationDomain newSimulationDomain = new SimulationDomain {
-//             simulationName = simulationStore.simulationDomain.simulationName,
-//             cursorPositionX = simulationStore.cursorPositionX,
-//             cursorPositionZ = simulationStore.cursorPositionZ,
-//             cursorRotation = simulationStore.cursorRotation,
-//             cameraSize = simulationStore.cameraSize,
-//             segments = simulationStore.segmentsDomain
-//         };
-//         string json = JsonUtility.ToJson(newSimulationDomain, true);
-//         string filePath = newSimulationDomain.simulationName;
-//         if (!Path.IsPathRooted(filePath)) {
-//             filePath = Path.Combine(Application.persistentDataPath, filePath + ".json");
-//         }
-//         try {
-//             Directory.CreateDirectory(Path.GetDirectoryName(filePath));
-//             File.WriteAllText(filePath, json);
-//             Debug.Log($"Simulation saved successfully to: {filePath}");
-//         } catch (System.Exception ex) {
-//             Debug.LogError($"Failed to save simulation: {ex.Message}");
-//         }
-//     }
 //     public void Exit() {
 //         SceneManager.LoadScene("MainMenu");
 //     }

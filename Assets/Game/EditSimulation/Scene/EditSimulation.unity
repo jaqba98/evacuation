@@ -666,6 +666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75eb674a36b723c4693be1d96cd991f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DomainManager
+  simulationStore: {fileID: 2024671943}
   simulationDomain:
     path: 
     cursorPosition: {x: 0, y: 0, z: 0}
@@ -2338,8 +2339,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: EditSimulationMenu, Assembly-CSharp
+      - m_Target: {fileID: 480797424}
+        m_TargetAssemblyTypeName: DomainManager, Assembly-CSharp
         m_MethodName: Save
         m_Mode: 1
         m_Arguments:

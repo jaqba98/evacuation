@@ -1,0 +1,315 @@
+{
+    "path": "D:/projects/evacuation/Assets\\data\\simulation\\map\\office_2.json",
+    "cursorPosition": {
+        "x": 32.0,
+        "y": 0.0,
+        "z": -16.0
+    },
+    "cursorRotation": {
+        "x": 0.0,
+        "y": 180.0,
+        "z": 0.0
+    },
+    "segments": [
+        {
+            "name": "Block_Door_Open_1_Empty_Prefab",
+            "position": {
+                "x": -24.0,
+                "y": 0.0,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Open_1_Empty_Prefab",
+            "position": {
+                "x": -24.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Open_1_Empty_Prefab",
+            "position": {
+                "x": -28.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Open_1_Empty_Prefab",
+            "position": {
+                "x": -28.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Open_1_Empty_Prefab",
+            "position": {
+                "x": -32.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Open_1_Empty_Prefab",
+            "position": {
+                "x": -32.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Open_1_Empty_Prefab",
+            "position": {
+                "x": -32.0,
+                "y": 0.0,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Open_1_Empty_Prefab",
+            "position": {
+                "x": -28.0,
+                "y": 0.0,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Open_1_Empty_Prefab",
+            "position": {
+                "x": -28.0,
+                "y": 0.0,
+                "z": 16.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Open_1_Empty_Prefab",
+            "position": {
+                "x": -28.0,
+                "y": 0.0,
+                "z": 16.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Open_1_Empty_Prefab",
+            "position": {
+                "x": -24.0,
+                "y": 0.0,
+                "z": 20.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Open_1_Empty_Prefab",
+            "position": {
+                "x": -20.0,
+                "y": 0.0,
+                "z": 20.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Open_1_Empty_Prefab",
+            "position": {
+                "x": -16.0,
+                "y": 0.0,
+                "z": 24.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Exit_1_Empty_Prefab",
+            "position": {
+                "x": -4.0,
+                "y": 0.0,
+                "z": 28.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Exit_1_Empty_Prefab",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 28.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Exit_1_Empty_Prefab",
+            "position": {
+                "x": 4.0,
+                "y": 0.0,
+                "z": 28.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Exit_1_Empty_Prefab",
+            "position": {
+                "x": 8.0,
+                "y": 0.0,
+                "z": 24.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Exit_1_Empty_Prefab",
+            "position": {
+                "x": 16.0,
+                "y": 0.0,
+                "z": 20.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Floor_1_Empty_Prefab",
+            "position": {
+                "x": 24.0,
+                "y": 0.0,
+                "z": 12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Floor_1_Empty_Prefab",
+            "position": {
+                "x": 28.0,
+                "y": 0.0,
+                "z": 8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Floor_1_Empty_Prefab",
+            "position": {
+                "x": 24.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Exit_1_Empty_Prefab",
+            "position": {
+                "x": 24.0,
+                "y": 0.0,
+                "z": -8.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        },
+        {
+            "name": "Block_Door_Exit_1_Empty_Prefab",
+            "position": {
+                "x": 24.0,
+                "y": 0.0,
+                "z": -12.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            }
+        }
+    ],
+    "currentSegmentIndex": 4
+}
