@@ -29,6 +29,10 @@ public class Cursor : MonoBehaviour {
     }
 
     private void Move(Vector3 direction) {
+        if (direction == Vector3.forward && simulationStore.cursorPosition.z >= simulationStore.maxCursorPositionUp) return;
+        if (direction == Vector3.back && simulationStore.cursorPosition.z <= simulationStore.maxCursorPositionDown) return;
+        if (direction == Vector3.left && simulationStore.cursorPosition.x <= simulationStore.maxCursorPositionLeft) return;
+        if (direction == Vector3.right && simulationStore.cursorPosition.x >= simulationStore.maxCursorPositionRight) return;
         simulationStore.cursorPosition += (direction * simulationStore.segmentSize);
         editSimulation.Reload();
     }

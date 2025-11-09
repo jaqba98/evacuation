@@ -20,6 +20,7 @@ public class Create : MonoBehaviour {
     }
 
     public void CreateSegment() {
+        if (!simulationStore.canBuildSegment) return;
         GameObject currentSegment = simulationStore.currentSegment;
         SegmentDomain newSegmentDomain = new SegmentDomain();
         newSegmentDomain.name = currentSegment.name;

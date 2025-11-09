@@ -10,6 +10,12 @@ public class SimulationStore : MonoBehaviour {
     public GameObject currentSegment;
     public List<SegmentDomain> segmentDomains;
     public string path;
+    public int cameraSize;
+    public bool canBuildSegment;
+    public int maxCursorPositionLeft;
+    public int maxCursorPositionRight;
+    public int maxCursorPositionUp;
+    public int maxCursorPositionDown;
 
     // [Header("Store Variables")]
     // public string simulationName;

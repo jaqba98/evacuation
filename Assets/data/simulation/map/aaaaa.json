@@ -1,0 +1,16 @@
+{
+    "path": "D:/projects/evacuation/Assets\\data\\simulation\\map\\aaaaa.json",
+    "cursorPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "cursorRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "segments": [],
+    "currentSegmentIndex": 0,
+    "cameraSize": 35
+}

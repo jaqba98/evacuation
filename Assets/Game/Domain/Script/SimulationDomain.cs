@@ -8,18 +8,21 @@ public class SimulationDomain {
     public Vector3 cursorRotation;
     public List<SegmentDomain> segments;
     public int currentSegmentIndex;
+    public int cameraSize;
 
     public SimulationDomain(
         string path,
         Vector3 cursorPosition,
         Vector3 cursorRotation,
         List<SegmentDomain> segments,
-        int currentSegmentIndex
+        int currentSegmentIndex,
+        int cameraSize
     ) {
         this.path = path;
         this.cursorPosition = cursorPosition;
         this.cursorRotation = cursorRotation;
         this.segments = segments;
         this.currentSegmentIndex = currentSegmentIndex;
+        this.cameraSize = cameraSize;
     }
 }

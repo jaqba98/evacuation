@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EditSimulation : MonoBehaviour {
     public DomainManager domainManager;
@@ -10,6 +11,7 @@ public class EditSimulation : MonoBehaviour {
     public RenderSegments renderSegments;
     public PositionPanel positionPanel;
     public SegmentManager segmentManager;
+    public CameraSize cameraSize;
 
     public void Start() {
         PreInit();
@@ -28,6 +30,8 @@ public class EditSimulation : MonoBehaviour {
         chooser.Init();
         create.Init();
         segmentManager.Init();
+        cameraSize.Init();
+        renderSegments.Init();
     }
 
     public void Reload() {
@@ -36,6 +40,11 @@ public class EditSimulation : MonoBehaviour {
         chooser.Reload();
         positionPanel.Reload();
         renderSegments.Reload();
+        cameraSize.Reload();
+    }
+
+    public void Exit() {
+        SceneManager.LoadScene("MainMenu");
     }
 
 //     public SimulationStore simulationStore;
@@ -64,21 +73,6 @@ public class EditSimulation : MonoBehaviour {
 //         rotate.Reload();
 //         positionPanel.Reload();
 //         cameraController.Reload();
-//     }
-//     public void Exit() {
-//         SceneManager.LoadScene("MainMenu");
-//     }
-//     public void Plus() {
-//         if (simulationStore.cameraSize > 10) {
-//             simulationStore.cameraSize -= 5;
-//             Reload();
-//         }
-//     }
-//     public void Minus() {
-//         if (simulationStore.cameraSize < 100) {
-//             simulationStore.cameraSize += 5;
-//             Reload();
-//         }
 //     }
 //     public void MoveLeft() {
 //         simulationStore.segmentsDomain.ForEach(segmentDomain => segmentDomain.segmentPositionX -= 4);

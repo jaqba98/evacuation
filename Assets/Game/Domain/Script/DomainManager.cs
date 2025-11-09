@@ -16,7 +16,8 @@ public class DomainManager : MonoBehaviour {
             simulationStore.cursorPosition,
             simulationStore.cursorRotation,
             simulationStore.segmentDomains,
-            simulationStore.currentSegmentIndex
+            simulationStore.currentSegmentIndex,
+            simulationStore.cameraSize
         );
         string json = JsonUtility.ToJson(newSimulationDomain, true);
         string filePath = newSimulationDomain.path;

@@ -29,7 +29,8 @@ public class LoadSimulation : MonoBehaviour {
             Vector3.zero,
             Vector3.zero,
             new List<SegmentDomain>(),
-            0
+            0,
+            10
         );
         string simulationDomainJson = JsonUtility.ToJson(newSimulationDomain);
         PlayerPrefs.SetString("simulationDomain", simulationDomainJson);
