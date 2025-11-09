@@ -55,5 +55,13 @@ public class LoadSimulation : MonoBehaviour {
         SceneManager.LoadScene("EditSimulation");
     }
 
-    private void OnStart(string simulationFilePath) {}
+    private void OnStart(string simulationFilePath) {
+        if (!File.Exists(simulationFilePath)) {
+           return;
+        }
+        string jsonContent = File.ReadAllText(simulationFilePath);
+        PlayerPrefs.SetString("simulationDomain", jsonContent);
+        PlayerPrefs.Save();
+        SceneManager.LoadScene("StartSimulation");
+    }
 }
