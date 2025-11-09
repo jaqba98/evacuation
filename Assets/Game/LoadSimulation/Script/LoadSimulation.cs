@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class LoadSimulation : MonoBehaviour {
     public void Awake() {
@@ -37,9 +38,22 @@ public class LoadSimulation : MonoBehaviour {
         SceneManager.LoadScene("EditSimulation");
     }
 
-    private void OnDelete(string simulationFilePath) {}
+    private void OnDelete(string simulationFilePath) {
+        if (File.Exists(simulationFilePath)) {
+            File.Delete(simulationFilePath);
+        }
+        SceneManager.LoadScene("LoadMenu");
+    }
 
-    private void OnEdit(string simulationFilePath) {}
+    private void OnEdit(string simulationFilePath) {
+        if (!File.Exists(simulationFilePath)) {
+           return;
+        }
+        string jsonContent = File.ReadAllText(simulationFilePath);
+        PlayerPrefs.SetString("simulationDomain", jsonContent);
+        PlayerPrefs.Save();
+        SceneManager.LoadScene("EditSimulation");
+    }
 
     private void OnStart(string simulationFilePath) {}
 }
