@@ -412,6 +412,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236354579}
   m_CullTransparentMesh: 1
+--- !u!1 &387606507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 387606508}
+  - component: {fileID: 387606509}
+  m_Layer: 0
+  m_Name: Tool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &387606508
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387606507}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &387606509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387606507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551b4998e711a50499bd5ddfae5eb6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FileTool
 --- !u!1 &435859098
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,8 +1791,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1671485730}
   - component: {fileID: 1671485733}
-  - component: {fileID: 1671485731}
-  - component: {fileID: 1671485732}
   m_Layer: 0
   m_Name: CreateMenu
   m_TagString: Untagged
@@ -1773,35 +1815,6 @@ Transform:
   - {fileID: 2102228269}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1671485731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671485729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2b40b03f0163f4418fcfa268401c279, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NameInputField
-  getAllSimulations: {fileID: 1671485732}
-  nameInputField: {fileID: 1979706423}
-  messageText: {fileID: 2134459038}
-  createButton: {fileID: 962418859}
-  fieldIsValid: 0
---- !u!114 &1671485732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671485729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a862525081dbb114a94849d1dfb480c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GetAllSimulations
 --- !u!114 &1671485733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1814,8 +1827,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f93546f2d3a94045ab7134bb883deaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CreateMenu
+  fileTool: {fileID: 387606509}
+  nameInputField: {fileID: 1979706423}
+  messageText: {fileID: 2134459038}
   createButton: {fileID: 962418859}
-  nameInputField: {fileID: 1671485731}
 --- !u!1 &1795985048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2151,8 +2166,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1671485731}
-        m_TargetAssemblyTypeName: NameInputField, Assembly-CSharp
+      - m_Target: {fileID: 1671485733}
+        m_TargetAssemblyTypeName: CreateMenu, Assembly-CSharp
         m_MethodName: OnValueChange
         m_Mode: 1
         m_Arguments:
@@ -2466,3 +2481,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 1671485730}
   - {fileID: 579187590}
+  - {fileID: 387606508}
