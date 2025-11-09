@@ -3,7 +3,7 @@ using UnityEngine;
 public class Rotation : MonoBehaviour {
     public SimulationStore simulationStore;
     public EditSimulation editSimulation;
-    public Listener listener;
+    public ListenerTool listenerTool;
     public DomainManager domainManager;
 
     public void Init() {
@@ -15,13 +15,13 @@ public class Rotation : MonoBehaviour {
     }
 
     private void OnEnable() {
-        listener.AddAction("q", () => Move(Vector3.down));
-        listener.AddAction("e", () => Move(Vector3.up));
+        listenerTool.AddAction("q", () => Move(Vector3.down));
+        listenerTool.AddAction("e", () => Move(Vector3.up));
     }
 
     private void OnDisable() {
-        listener.RemoveAction("q");
-        listener.RemoveAction("e");
+        listenerTool.RemoveAction("q");
+        listenerTool.RemoveAction("e");
     }
 
     private void Move(Vector3 direction) {

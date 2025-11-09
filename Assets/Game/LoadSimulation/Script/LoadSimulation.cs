@@ -39,23 +39,7 @@ public class LoadSimulation : MonoBehaviour {
 
     private void OnDelete(string simulationFilePath) {}
 
-    private void OnEdit(string simulationFilePath) {
-        // if (File.Exists(simulationName)) {
-        //     string json = File.ReadAllText(simulationName);
-        //     PlayerPrefs.SetString("simulationData", json);
-        // } else {
-        //     SceneManager.LoadScene("MainMenu");
-        // }
-        // SceneManager.LoadScene("EditSimulation");
-    }
+    private void OnEdit(string simulationFilePath) {}
 
-    private void OnStart(string simulationFilePath) {
-        // if (File.Exists(simulationName)) {
-        //     string json = File.ReadAllText(simulationName);
-        //     PlayerPrefs.SetString("simulationData", json);
-        // } else {
-        //     SceneManager.LoadScene("MainMenu");
-        // }
-        // SceneManager.LoadScene("StartSimulation");
-    }
+    private void OnStart(string simulationFilePath) {}
 }

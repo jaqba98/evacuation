@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class Create : MonoBehaviour {
     public SimulationStore simulationStore;
     public EditSimulation editSimulation;
-    public Listener listener;
+    public ListenerTool listenerTool;
     public DomainManager domainManager;
 
     public void Init() {
@@ -12,11 +12,11 @@ public class Create : MonoBehaviour {
     }
 
     private void OnEnable() {
-        listener.AddAction("o", () => CreateSegment());
+        listenerTool.AddAction("o", () => CreateSegment());
     }
 
     private void OnDisable() {
-        listener.RemoveAction("o");
+        listenerTool.RemoveAction("o");
     }
 
     public void CreateSegment() {

@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 using System.Collections.Generic;
 using System;
 
-public class Listener : MonoBehaviour {
+public class ListenerTool : MonoBehaviour {
     private Dictionary<string, InputAction> actions = new Dictionary<string, InputAction>();
 
     public void AddAction(string key, UnityAction unityAction) {

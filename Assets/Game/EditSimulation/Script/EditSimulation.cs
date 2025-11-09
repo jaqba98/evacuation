@@ -46,40 +46,4 @@ public class EditSimulation : MonoBehaviour {
     public void Exit() {
         SceneManager.LoadScene("MainMenu");
     }
-
-//     public SimulationStore simulationStore;
-//     [Header("Services")]
-//     public Signal signal;
-//     public Cursor cursor;
-//     public Chooser chooser;
-//     public Rotate rotate;
-//     public Segments segments;
-//     public PositionPanel positionPanel;
-//     public CameraController cameraController;
-//     public SegmentManager segmentManager;
-//     public void Start() {
-//         Init();
-//         Reload();
-//     }
-//     public void Init() {
-//         segmentManager.Init(simulationStore);
-//         segments.Init();
-//     }
-//     public void Reload() {
-//         segments.Reload();
-//         signal.Reload();
-//         cursor.Reload();
-//         chooser.Reload();
-//         rotate.Reload();
-//         positionPanel.Reload();
-//         cameraController.Reload();
-//     }
-//     public void MoveLeft() {
-//         simulationStore.segmentsDomain.ForEach(segmentDomain => segmentDomain.segmentPositionX -= 4);
-//         segments.Init();
-//     }
-//     public void MoveRight() {
-//         simulationStore.segmentsDomain.ForEach(segmentDomain => segmentDomain.segmentPositionX += 4);
-//         segments.Init();
-//     }
 }

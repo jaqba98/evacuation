@@ -3,7 +3,7 @@ using UnityEngine;
 public class Chooser : MonoBehaviour {
     public SimulationStore simulationStore;
     public EditSimulation editSimulation;
-    public Listener listener;
+    public ListenerTool listenerTool;
     public DomainManager domainManager;
 
     public void Init() {
@@ -24,13 +24,13 @@ public class Chooser : MonoBehaviour {
     }
 
     private void OnEnable() {
-        listener.AddAction("i", () => ChangeSegment(-1));
-        listener.AddAction("p", () => ChangeSegment(1));
+        listenerTool.AddAction("i", () => ChangeSegment(-1));
+        listenerTool.AddAction("p", () => ChangeSegment(1));
     }
 
     private void OnDisable() {
-        listener.RemoveAction("i");
-        listener.RemoveAction("p");
+        listenerTool.RemoveAction("i");
+        listenerTool.RemoveAction("p");
     }
 
     private void ChangeSegment(int direction) {

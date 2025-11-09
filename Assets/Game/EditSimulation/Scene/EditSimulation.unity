@@ -213,7 +213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cursor
   simulationStore: {fileID: 2024671943}
   editSimulation: {fileID: 1624412830}
-  listener: {fileID: 243676674}
+  listenerTool: {fileID: 243676674}
   domainManager: {fileID: 480797424}
 --- !u!1 &243676671
 GameObject:
@@ -602,7 +602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DeleteSegment
   simulationStore: {fileID: 2024671943}
   editSimulation: {fileID: 1624412830}
-  listener: {fileID: 243676674}
+  listenerTool: {fileID: 243676674}
 --- !u!1 &725442255
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,7 +652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Rotate
   simulationStore: {fileID: 2024671943}
   editSimulation: {fileID: 1624412830}
-  listener: {fileID: 243676674}
+  listenerTool: {fileID: 243676674}
   domainManager: {fileID: 480797424}
 --- !u!1 &837471410
 GameObject:
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Chooser
   simulationStore: {fileID: 2024671943}
   editSimulation: {fileID: 1624412830}
-  listener: {fileID: 243676674}
+  listenerTool: {fileID: 243676674}
   domainManager: {fileID: 480797424}
 --- !u!1 &909921301
 GameObject:
@@ -2444,7 +2444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Create
   simulationStore: {fileID: 2024671943}
   editSimulation: {fileID: 1624412830}
-  listener: {fileID: 243676674}
+  listenerTool: {fileID: 243676674}
   domainManager: {fileID: 480797424}
 --- !u!1 &1966730228
 GameObject:
@@ -2754,6 +2754,10 @@ MonoBehaviour:
   path: 
   cameraSize: 0
   canBuildSegment: 0
+  maxCursorPositionLeft: 0
+  maxCursorPositionRight: 0
+  maxCursorPositionUp: 0
+  maxCursorPositionDown: 0
 --- !u!4 &2024671944
 Transform:
   m_ObjectHideFlags: 0

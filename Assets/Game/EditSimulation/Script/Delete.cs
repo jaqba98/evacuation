@@ -3,14 +3,14 @@ using UnityEngine;
 public class Delete : MonoBehaviour {
     public SimulationStore simulationStore;
     public EditSimulation editSimulation;
-    public Listener listener;
+    public ListenerTool listenerTool;
 
     private void OnEnable() {
-        listener.AddAction("l", () => DeleteSegment());
+        listenerTool.AddAction("l", () => DeleteSegment());
     }
 
     private void OnDisable() {
-        listener.RemoveAction("l");
+        listenerTool.RemoveAction("l");
     }
 
     public void DeleteSegment() {
