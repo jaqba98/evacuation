@@ -35,11 +35,11 @@ public class EditSimulation : MonoBehaviour {
     }
 
     public void Reload() {
+        renderSegments.Reload();
         cursor.Reload();
         rotation.Reload();
         chooser.Reload();
         positionPanel.Reload();
-        renderSegments.Reload();
         cameraSize.Reload();
     }
 

@@ -21,6 +21,13 @@ public class Chooser : MonoBehaviour {
         newSegment.transform.localPosition = Vector3.zero;
         newSegment.transform.localRotation = Quaternion.identity;
         newSegment.transform.localScale = Vector3.one;
+        Outline outline = newSegment.AddComponent<Outline>();
+        outline.OutlineWidth = 10f;
+        if (simulationStore.canBuildSegment) {
+            outline.OutlineColor = new Color(0f, 0.5f, 0f);
+        } else {
+            outline.OutlineColor = new Color(0.5f, 0f, 0f);
+        }
     }
 
     private void OnEnable() {

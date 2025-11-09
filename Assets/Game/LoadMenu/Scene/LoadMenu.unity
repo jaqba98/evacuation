@@ -2554,11 +2554,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0977fcdb484ca704f9c5c0047421fded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoadMenu
-  content: {fileID: 289786735}
-  prefab: {fileID: 5386823528874356156, guid: be9874a3479b3014398e08471bb49966, type: 3}
-  panicInputField: {fileID: 120434593}
-  timerInputField: {fileID: 209237740}
-  filterInputField: {fileID: 1804803309}
 --- !u!1 &1710584735
 GameObject:
   m_ObjectHideFlags: 0

@@ -131,10 +131,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_Door_Open_1_Empty_Prefab
       objectReference: {fileID: 0}
-    - target: {fileID: 3742242521593154646, guid: 09464350996af6645aee6887e0e28ef2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6813754322772384127, guid: 09464350996af6645aee6887e0e28ef2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -236,10 +232,6 @@ PrefabInstance:
     - target: {fileID: 5292833334302397403, guid: 4148ec1d5a391b84aa6b2da8222d40d5, type: 3}
       propertyPath: m_Name
       value: Block_Door_Block_1_Empty_Prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 5292833334302397403, guid: 4148ec1d5a391b84aa6b2da8222d40d5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -456,10 +448,6 @@ PrefabInstance:
     - target: {fileID: 1910700651852511044, guid: e53fc285d22d3334a97762fe8b99d45f, type: 3}
       propertyPath: m_Name
       value: Block_Wall_1_Empty_Prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 1910700651852511044, guid: e53fc285d22d3334a97762fe8b99d45f, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2442281213739039177, guid: e53fc285d22d3334a97762fe8b99d45f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -826,10 +814,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_Door_Exit_1_Empty_Prefab
       objectReference: {fileID: 0}
-    - target: {fileID: 1382518934295813844, guid: a83cc77c0ec265846a0949e19d362c63, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -923,10 +907,6 @@ PrefabInstance:
     - target: {fileID: 8983963198676249535, guid: 7eda0e95d9bdd25438ecefb051b8befe, type: 3}
       propertyPath: m_Name
       value: Block_Corner_1_Empty_Prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 8983963198676249535, guid: 7eda0e95d9bdd25438ecefb051b8befe, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1186,10 +1166,6 @@ PrefabInstance:
     - target: {fileID: 5264638233555003517, guid: 55fdd49cd7e89c147aa4df0797ba6483, type: 3}
       propertyPath: m_Name
       value: Block_Floor_1_Empty_Prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 5264638233555003517, guid: 55fdd49cd7e89c147aa4df0797ba6483, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
