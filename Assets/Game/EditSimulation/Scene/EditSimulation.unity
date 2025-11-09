@@ -214,6 +214,7 @@ MonoBehaviour:
   simulationStore: {fileID: 2024671943}
   editSimulation: {fileID: 1624412830}
   listener: {fileID: 243676674}
+  domainManager: {fileID: 480797424}
 --- !u!1 &243676671
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,6 +637,56 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474890508}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &480797423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 480797425}
+  - component: {fileID: 480797424}
+  m_Layer: 0
+  m_Name: DomainManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &480797424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480797423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75eb674a36b723c4693be1d96cd991f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DomainManager
+  simulationDomain:
+    path: 
+    cursorPosition: {x: 0, y: 0, z: 0}
+    cursorRotation: {x: 0, y: 0, z: 0}
+    segments: []
+    currentSegmentIndex: 0
+--- !u!4 &480797425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480797423}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &560862106
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +784,7 @@ MonoBehaviour:
   simulationStore: {fileID: 2024671943}
   editSimulation: {fileID: 1624412830}
   listener: {fileID: 243676674}
+  domainManager: {fileID: 480797424}
 --- !u!1 &819646236
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +965,7 @@ MonoBehaviour:
   simulationStore: {fileID: 2024671943}
   editSimulation: {fileID: 1624412830}
   listener: {fileID: 243676674}
+  domainManager: {fileID: 480797424}
 --- !u!1 &909921301
 GameObject:
   m_ObjectHideFlags: 0
@@ -2117,6 +2170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab17fe44fe87e948be91771f90a2528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EditSimulation
+  domainManager: {fileID: 480797424}
   simulationCommon: {fileID: 1867668997}
   cursor: {fileID: 150920909}
   rotation: {fileID: 725442257}
@@ -2727,6 +2781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EditSimulationConst
   simulationStore: {fileID: 2024671943}
+  domainManager: {fileID: 480797424}
 --- !u!1 &1869382796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,6 +2829,7 @@ MonoBehaviour:
   simulationStore: {fileID: 2024671943}
   editSimulation: {fileID: 1624412830}
   listener: {fileID: 243676674}
+  domainManager: {fileID: 480797424}
 --- !u!1 &1930667788
 GameObject:
   m_ObjectHideFlags: 0
@@ -3215,6 +3271,7 @@ MonoBehaviour:
   currentSegmentIndex: 0
   currentSegment: {fileID: 0}
   segmentDomains: []
+  path: 
 --- !u!4 &2024671944
 Transform:
   m_ObjectHideFlags: 0
@@ -3243,4 +3300,5 @@ SceneRoots:
   - {fileID: 8214463}
   - {fileID: 1840721896}
   - {fileID: 1554255914}
+  - {fileID: 480797425}
   - {fileID: 1352108116}

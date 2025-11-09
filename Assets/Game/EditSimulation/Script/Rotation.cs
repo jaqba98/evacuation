@@ -4,10 +4,10 @@ public class Rotation : MonoBehaviour {
     public SimulationStore simulationStore;
     public EditSimulation editSimulation;
     public Listener listener;
+    public DomainManager domainManager;
 
     public void Init() {
-        // TODO: Read the cursorPosition from the PlayerPrefs!
-        simulationStore.cursorRotation = Vector3.zero;
+        simulationStore.cursorRotation = domainManager.simulationDomain.cursorRotation;
     }
 
     public void Reload() {

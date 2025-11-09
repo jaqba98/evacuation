@@ -1,56 +1,60 @@
 using UnityEngine;
-// using System.Collections.Generic;
-// using UnityEngine.SceneManagement;
-// using System.IO;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class LoadSimulation : MonoBehaviour {
-    // void Awake() {
-    //     string simulationName = PlayerPrefs.GetString("simulationName");
-    //     string simulationType = PlayerPrefs.GetString("simulationType");
-    //     if (simulationType == "create") {
-    //         OnCreate(simulationName, simulationType);
-    //         return;
-    //     }
-    //     if (simulationType == "start") {
-    //         OnStart(simulationName, simulationType);
-    //         return;
-    //     }
-    //     if (simulationType == "edit") {
-    //         OnEdit(simulationName, simulationType);
-    //         return;
-    //     }
-    // }
+    public void Awake() {
+        string simulationFilePath = PlayerPrefs.GetString("simulationFilePath");
+        string simulationType = PlayerPrefs.GetString("simulationType");
+        if (simulationType == "create") {
+            OnCreate(simulationFilePath);
+            return;
+        }
+        if (simulationType == "delete") {
+            OnDelete(simulationFilePath);
+            return;
+        }
+        if (simulationType == "edit") {
+            OnEdit(simulationFilePath);
+            return;
+        }
+        if (simulationType == "start") {
+            OnStart(simulationFilePath);
+        }
+    }
 
-    // private void OnCreate(string simulationName, string simulationType) {
-    //     SimulationDomain newSimulationDomain = new SimulationDomain();
-    //     newSimulationDomain.simulationName = simulationName;
-    //     newSimulationDomain.cursorPositionX = 0;
-    //     newSimulationDomain.cursorPositionZ = 0;
-    //     newSimulationDomain.cursorRotation = 0;
-    //     newSimulationDomain.cameraSize = 10;
-    //     newSimulationDomain.segments = new List<SegmentDomain>();
-    //     string json = JsonUtility.ToJson(newSimulationDomain);
-    //     PlayerPrefs.SetString("simulationData", json);
-    //     SceneManager.LoadScene("EditSimulation");
-    // }
+    private void OnCreate(string simulationFilePath) {
+        SimulationDomain newSimulationDomain = new SimulationDomain(
+            simulationFilePath,
+            Vector3.zero,
+            Vector3.zero,
+            new List<SegmentDomain>(),
+            0
+        );
+        string simulationDomainJson = JsonUtility.ToJson(newSimulationDomain);
+        PlayerPrefs.SetString("simulationDomain", simulationDomainJson);
+        SceneManager.LoadScene("EditSimulation");
+    }
 
-    // private void OnStart(string simulationName, string simulationType) {
-    //     if (File.Exists(simulationName)) {
-    //         string json = File.ReadAllText(simulationName);
-    //         PlayerPrefs.SetString("simulationData", json);
-    //     } else {
-    //         SceneManager.LoadScene("MainMenu");
-    //     }
-    //     SceneManager.LoadScene("StartSimulation");
-    // }
+    private void OnDelete(string simulationFilePath) {}
 
-    // private void OnEdit(string simulationName, string simulationType) {
-    //     if (File.Exists(simulationName)) {
-    //         string json = File.ReadAllText(simulationName);
-    //         PlayerPrefs.SetString("simulationData", json);
-    //     } else {
-    //         SceneManager.LoadScene("MainMenu");
-    //     }
-    //     SceneManager.LoadScene("EditSimulation");
-    // }
+    private void OnEdit(string simulationFilePath) {
+        // if (File.Exists(simulationName)) {
+        //     string json = File.ReadAllText(simulationName);
+        //     PlayerPrefs.SetString("simulationData", json);
+        // } else {
+        //     SceneManager.LoadScene("MainMenu");
+        // }
+        // SceneManager.LoadScene("EditSimulation");
+    }
+
+    private void OnStart(string simulationFilePath) {
+        // if (File.Exists(simulationName)) {
+        //     string json = File.ReadAllText(simulationName);
+        //     PlayerPrefs.SetString("simulationData", json);
+        // } else {
+        //     SceneManager.LoadScene("MainMenu");
+        // }
+        // SceneManager.LoadScene("StartSimulation");
+    }
 }

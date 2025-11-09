@@ -9,6 +9,7 @@ public class SimulationStore : MonoBehaviour {
     public int currentSegmentIndex;
     public GameObject currentSegment;
     public List<SegmentDomain> segmentDomains;
+    public string path;
 
     // [Header("Store Variables")]
     // public string simulationName;

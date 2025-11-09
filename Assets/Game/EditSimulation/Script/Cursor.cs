@@ -4,10 +4,10 @@ public class Cursor : MonoBehaviour {
     public SimulationStore simulationStore;
     public EditSimulation editSimulation;
     public Listener listener;
+    public DomainManager domainManager;
 
     public void Init() {
-        // TODO: Read the cursorPosition from the PlayerPrefs!
-        simulationStore.cursorPosition = Vector3.zero;
+        simulationStore.cursorPosition = domainManager.simulationDomain.cursorPosition;
     }
 
     public void Reload() {

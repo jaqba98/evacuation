@@ -4,9 +4,10 @@ public class Chooser : MonoBehaviour {
     public SimulationStore simulationStore;
     public EditSimulation editSimulation;
     public Listener listener;
+    public DomainManager domainManager;
 
     public void Init() {
-        simulationStore.currentSegmentIndex = 0;
+        simulationStore.currentSegmentIndex = domainManager.simulationDomain.currentSegmentIndex;
     }
 
     public void Reload() {

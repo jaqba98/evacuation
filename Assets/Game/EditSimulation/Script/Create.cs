@@ -5,9 +5,10 @@ public class Create : MonoBehaviour {
     public SimulationStore simulationStore;
     public EditSimulation editSimulation;
     public Listener listener;
+    public DomainManager domainManager;
 
     public void Init() {
-        simulationStore.segmentDomains = new List<SegmentDomain>();
+        simulationStore.segmentDomains = domainManager.simulationDomain.segments;
     }
 
     private void OnEnable() {

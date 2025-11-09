@@ -1,6 +1,7 @@
 using UnityEngine;
 
 public class EditSimulation : MonoBehaviour {
+    public DomainManager domainManager;
     public SimulationCommon simulationCommon;
     public Cursor cursor;
     public Rotation rotation;
@@ -11,13 +12,22 @@ public class EditSimulation : MonoBehaviour {
     public SegmentManager segmentManager;
 
     public void Start() {
+        PreInit();
+        Init();
+        Reload();
+    }
+
+    public void PreInit() {
+        domainManager.PreInit();
+    }
+
+    public void Init() {
         simulationCommon.Init();
         cursor.Init();
         rotation.Init();
         chooser.Init();
         create.Init();
         segmentManager.Init();
-        Reload();
     }
 
     public void Reload() {

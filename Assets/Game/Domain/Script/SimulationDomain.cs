@@ -3,10 +3,23 @@ using System.Collections.Generic;
 
 [System.Serializable]
 public class SimulationDomain {
-    public string simulationName;
-    public float cursorPositionX;
-    public float cursorPositionZ;
-    public float cursorRotation;
-    public int cameraSize;
+    public string path;
+    public Vector3 cursorPosition;
+    public Vector3 cursorRotation;
     public List<SegmentDomain> segments;
+    public int currentSegmentIndex;
+
+    public SimulationDomain(
+        string path,
+        Vector3 cursorPosition,
+        Vector3 cursorRotation,
+        List<SegmentDomain> segments,
+        int currentSegmentIndex
+    ) {
+        this.path = path;
+        this.cursorPosition = cursorPosition;
+        this.cursorRotation = cursorRotation;
+        this.segments = segments;
+        this.currentSegmentIndex = currentSegmentIndex;
+    }
 }
